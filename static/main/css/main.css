@@ -1,21 +1,24 @@
 /* Block */
 .main {
-    padding: 5vw;
+    padding: 3vw;
+    background-color: beige;
 }
 
 /* Element */
 .content{
     text-align: center;
+    background-color: aquamarine;
 }
 
 .content-row {
     display: flex;
     flex-direction: row;
-    max-height: 50vh;
-    max-width: 80vw;
+    max-height: 60vh;
+    max-width: 90vw;
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
+    background-color: aquamarine
 }
 
 /* Element Modifier */
@@ -28,6 +31,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-right-radius :4px ;
 }
 
 .right-column {

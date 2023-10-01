@@ -8,8 +8,13 @@
         <title>Projects</title>
         <link rel="stylesheet" type="text/css" href="static/main/css/header.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/navbar.css">
-        <link rel="stylesheet" type="text/css" href="static/main/css/main.css">
+        <!-- <link rel="stylesheet" type="text/css" href="static/main/css/main.css"> -->
+        <link rel="stylesheet" type="text/css" href="static/main/css/project.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/footer.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="static/favicon/site.webmanifest">
     </head>
     <body class="body">
         <header class="header">
@@ -26,20 +31,21 @@
                 <a href="static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
 
                 <!-- LinkedIn link as an image -->
-                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link">
+                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link" target="_blank">
                     <img src="static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
                 </a>
                 
                 <!-- dropdown menu for mobile interactivity -->
                 <div class="dropdown">
                     <button onclick="OnClick()" class="menu-button" id = "menu-button">
-                        <img src="../static/main/images/menu-bar.png" class="menu-image" alt="Menu" loading="lazy">
+                        <img src="static/main/images/menu-bar.png" class="menu-image" alt="Menu" loading="lazy">
                     </button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="index.html" class="dropdown-nav-link">Home</a>
                         <a href="projects.html" class="dropdown-nav-link">Projects</a>
                         <a href="static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
-                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link">LinkedIn</a></li>
+                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link" target="_blank">LinkedIn</a></li>
+                        <a href="https://github.com/sri0606" class="dropdown-nav-link" target="_blank">GitHub</a>
                     </div>
                 </div>
 
@@ -52,17 +58,16 @@
                 <p>Click an image or hyperlink in the description to learn more.</p>
             </div>
 
-            <hr>
 
-            <div class="content-row">
-                <div class="left-column">
+            <div class="content-row" id="piano">
+                <div class="project-image">
                     <a href="projects/piano.html">
                         <img src="static/main/images/piano.jpeg" alt="Piano" loading="lazy">
                     </a>
                 </div>
-                <div class="right-column">
+                <div class="project-description">
                     <h2>
-                        Javasript Piano
+                        Javascript Piano
                     </h2>
                     <p>I created an interactive piano entirely using HTML, CSS, and JavaScript. This project not only highlights my web development skills but also demonstrates my ability to build beautiful and mobile-friendly front-end applications.
                         <a href="projects/piano.html">Click here to explore and play the piano.</a></p>
@@ -70,8 +75,157 @@
                 
             </div>
 
-            <hr>
 
+            <div class="content-row" id="bugsquash">
+                <div class="project-image">
+                    <a href="https://github.com/sri0606/BugSquash" target="_blank">
+                        <!-- <img src="static/main/images/bugsquash.png" alt="bugsquash" loading="lazy"> -->
+                        <iframe src="https://www.youtube.com/embed/s0bwDJnk0Xs" frameborder="0" allowfullscreen></iframe>
+                    </a>
+                </div>
+
+                <div class="project-description">
+                    <h2>
+                        Bug Squash Game development
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong> C++, C, CMake, wxWidgets, XML<br><br>
+                        ► Created a multi-level game called 'Bug Squash' involving various types of bugs attempting to infect programs.<br><br>
+                        ► Implemented agile software development practices along with Unit-Testing practices, dynamic Animations, OOP, and concepts of Visitor and Observer patterns, Polymorphism.<br><br>
+                        ► Contributed to a winning team in a Level 3 design contest organized by the CSE department.
+                      </p>   
+                   
+                </div>
+                
+            </div>
+
+
+            <div class="content-row" id="brainwaive">
+                <div class="project-image">
+                        <img src="static/main/images/brainwaive.png" alt="Piano" loading="lazy">
+                </div>
+                <div class="project-description">
+                    <h2>
+                        Brainwaive app
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong>
+                        Python, Dart, Google Cloud, Firebase, Flutter, OpenAI<br><br>
+                        ► Recipient of the Best Emerging Technology Award at SpartaHack.<br><br>
+                        ► Leveraged Python and Dart to develop a highly innovative cross-platform app, integrating OpenAI's powerful API.<br><br>
+                        ► Created a dynamic platform that facilitates personalized quizzes and flashcards tailored to meet students' specific educational needs.<br><br>
+                        ► Spearheaded the development of the backend infrastructure utilizing Google Cloud Functions, with Firebase serving as the database.
+                      </p>
+                      
+                </div>
+                
+            </div>
+
+            <div class="content-row" id = "musical-machines">
+                <div class="project-image">
+                    <a href="https://gitfront.io/r/sri0606/tGZputwFCxM2/CanadianMachines/" alt="Code on gitfront">
+                        <iframe src="https://www.youtube.com/embed/daATxmjHkoE" frameborder="0" allowfullscreen></iframe>
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h2>
+                        Musical Machines
+                    </h2>
+
+                    <p>
+                        <strong>Stack :</strong>
+                        C++, C, CMake, miniaudio, wxWidgets, XML<br><br>
+                        ► Developed a musical machine that utilized card input (with rows mapped to musical notes) to enable the various components to play.<br><br>
+                        ► Designed a comprehensive UML class diagram, incorporating associations, inheritance, and attributes, as a preliminary step to development.<br><br>
+                        ► Implemented advanced programming concepts such as Tweening, Visitor and Observer patterns, Polymorphism, Adaptation, Inheritance, and Composition.<br><br>
+                        ► Successfully integrated and adapted the animated software into another program, to create an animated movie.<br><br>
+                        Note: This is a project from one of my classes (CSE335)
+                      </p>
+
+                      
+                    </div>
+                
+            </div>
+
+            <div class="content-row" id="auto-scrapper">
+                <div class="project-image">
+                        <img src="static/main/images/autoscrapper.jpeg" alt="Auto scrapper" loading="lazy">
+                </div>
+                <div class="project-description">
+                    <h2>
+                        Automated Scraping & Data Reorganization Software
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong>
+                        Python, selenium, beautifulsoup4, PyZotero, streamlit<br><br>
+                        ► Developed an automated software solution, simplifying the tasks of merging and reformatting data from diverse sources. This resulted in the creation of an efficient and current departmental database.<br><br>
+                        ► Streamlined the navigation process from the old database format to a new, efficient format that provides enhanced and relevant information for each member of the department.<br><br>
+                        ► Utilized PyZotero and web-scraping techniques to integrate data and references, enhancing the accuracy and credibility of the department's database content.<br><br>
+                        ► Contributed to enhancing departmental efficiency by providing a data-driven solution that enabled faster access to accurate information, ultimately supporting better decision-making processes.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="content-row" id = "aquarium">
+                <div class="project-image">
+                    <iframe src="https://www.youtube.com/embed/rZZRwQCB7kw" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="project-description">
+                    <h2>
+                        Aquarium
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong>
+                        C++, C, CMake, wxWidgets<br><br>
+                        ► Developed a fun program involving a heavy animated aquarium that can be populated.<br><br>
+                        ► This project involves concepts like file saving/loading of formats, Refactoring, Inheritance, and Unit testing.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="content-row" id="tictactoe">
+                <div class="project-image">
+                    <a href="https://github.com/sri0606/TicTacToe-Game">
+                        <img src="static/main/images/tictactoe.png" alt="Tic Tac Toe" loading="lazy">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h2>
+                        Tic-Tac-Toe game
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong>
+                        Python, Tkinter<br><br>
+                        ► A fun personalized project where I developed a Tic Tac Toe game utilizing the Tkinter library in Python. This interactive game allows users to enjoy the classic gameplay experience on their desktop.<br><br>
+                        ► Incorporated intelligent logic to handle player turns, validate moves, and determine winning conditions, ensuring a seamless and enjoyable gameplay experience for users of all skill levels.
+                    </p>  
+                </div>
+                
+            </div>
+
+            <div class="content-row" id="pyorcid">
+                <div class="project-image">
+                    <a href="https://github.com/sri0606/PyOrcid">
+                        <img src="static/main/images/pyorcid.png" alt="PyOrcid" loading="lazy">
+                    </a>
+                </div>
+                <div class="project-description">
+                    <h2>
+                        PyOrcid
+                    </h2>
+                    <p>
+                        <strong>Stack :</strong>
+                        Python, Orcid API, OAuth2.0<br><br>
+                        ► PyOrcid is a Python library and API client designed to simplify interactions with the ORCID API.<br><br>
+                        ► ORCID (Open Researcher and Contributor ID) is a nonprofit organization that provides unique identifiers to researchers, ensuring their work is accurately attributed and discoverable.<br><br>
+                        ► PyOrcid enables developers to seamlessly integrate ORCID functionality into their software, allowing users to collect, track, and sync their publication materials, research activities, and other related information.
+                    </p>
+                       
+                </div>
+                
+            </div>
             <div class="content">
                 <h2>More coming soon!</h2>
             </div>

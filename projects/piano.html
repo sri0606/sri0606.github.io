@@ -11,6 +11,10 @@
         <link rel="stylesheet" type="text/css" href="../static/main/css/main.css">
         <link rel="stylesheet" type="text/css" href="../static/main/css/footer.css">
         <link rel="stylesheet" type="text/css" href="../static/piano/css/piano.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../static/favicon/site.webmanifest">
     </head>
     <body class="body">
         <header class="header">
@@ -22,25 +26,26 @@
                 <span class="assignment-name"> </span>
             </div>
             <div class="navbar-right">
-                <a href="index.html" class="navbar-link">Home</a>
-                <a href="projects.html" class="navbar-link">Projects</a>
-                <a href="static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
+                <a href="../index.html" class="navbar-link">Home</a>
+                <a href="../projects.html" class="navbar-link">Projects</a>
+                <a href="../static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
 
                 <!-- LinkedIn link as an image -->
-                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link">
-                    <img src="static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
+                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link" target="_blank">
+                    <img src="../static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
                 </a>
                 
                 <!-- dropdown menu for mobile interactivity -->
                 <div class="dropdown">
                     <button onclick="OnClick()" class="menu-button" id = "menu-button">
-                        <img src="static/main/images/menu-bar.png" class="menu-image" alt="Menu" loading="lazy">
+                        <img src="../static/main/images/menu-bar.png" class="menu-image" alt="Menu" loading="lazy">
                     </button>
                     <div id="myDropdown" class="dropdown-content">
                         <a href="index.html" class="dropdown-nav-link">Home</a>
                         <a href="projects.html" class="dropdown-nav-link">Projects</a>
-                        <a href="static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
-                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link">LinkedIn</a></li>
+                        <a href="../static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
+                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link" target="_blank">LinkedIn</a></li>
+                        <a href="https://github.com/sri0606" class="dropdown-nav-link" target="_blank">GitHub</a>
                     </div>
                 </div>
 
@@ -88,7 +93,7 @@
             <p>&copy; Sriram Seelamneni</p>
         </footer>
 
-        <script src="static/main/js/navbar.js"></script>
-        <script src="static/piano/js/piano.js"></script>
+        <script src="../static/main/js/navbar.js"></script>
+        <script src="../static/piano/js/piano.js"></script>
     </body>
 </html>
