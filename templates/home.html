@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content = "CSE477 HW1">
+        <meta name="author" content = "Sriram Seelamneni">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="../static/main/css/header.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/footer.css">
+    </head>
+    <body class="body">
+        <header class="header">
+            
+        </header>
+
+        <nav class="navbar">
+            <div class="navbar-left">
+                <span class="assignment-name">CSE477 - Homework 1</span>
+            </div>
+            <div class="navbar-right">
+                <a href="home.html" class="navbar-link">Home</a>
+                <a href="projects.html" class="navbar-link">Projects</a>
+                <a href="../static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
+
+                <!-- LinkedIn link as an image -->
+                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link">
+                    <img src="../static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
+                </a>
+                
+                <!-- dropdown menu for mobile interactivity -->
+                <div class="dropdown">
+                    <button onclick="OnClick()" class="menu-button" id = "menu-button">
+                        <img src="../static/main/images/menu-bar.png" class="menu-image" alt="Menu" loading="lazy">
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="home.html" class="dropdown-nav-link">Home</a>
+                        <a href="projects.html" class="dropdown-nav-link">Projects</a>
+                        <a href="../static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
+                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link">LinkedIn</a></li>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <main class="main">
+            <!-- this row contains my image and a brief description about myself -->
+            <div class="content-row">
+                <div class="left-column">
+                    <img src="../static/main/images/ppic.jpg" alt="Sriram" loading="lazy">
+                </div>
+                <div class="right-column">
+                    <h1 class="h1">Sriram Seelamneni</h1>
+                    <p>Hey there! I'm a Junior at Michigan State University, pursuing a degree in Computer Science and Computational Mathematics, Science, and Engineering. 
+
+                        As a passionate learner, I'm constantly captivated by the realms of computing, robotics, and AI. The sheer potential for innovation in these fields is boundless, and it's this untapped potential that inspired me to pursue a path in Computer Science. 
+                    </p>
+                    <p>
+                        One of the things I truly appreciate about Computer Science is its vastness. There are countless things to explore and study. However, I've discovered that success doesn't come from mastering everything, but rather from being adaptable. I pride myself on quickly adapting to new software and languages, which I believe is a powerful skill in this ever-evolving field.
+                        
+                        During my free time, you can often find me diving into captivating projects, indulging in the immersive worlds of sports and video games. These virtual adventures provide a perfect balance to my passion for technology.
+                        
+                    </p>
+                   
+                </div>
+            </div>
+            
+            <hr>
+
+            <div class="fun-fact">
+                <h2>A fun fact about me:</h2>
+                <p>I am an international student from India.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; Sriram Seelamneni</p>
+        </footer>
+
+        <script src="../static/main/js/navbar.js"></script>
+    </body>
+</html>

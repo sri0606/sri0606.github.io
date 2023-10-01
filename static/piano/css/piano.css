@@ -1,0 +1,156 @@
+/* class holds the poem */
+.content-poem{
+    text-align: center;
+    font-style: italic;
+    font-size: 130%;
+    font-weight: 3;
+}
+
+.great-old-one{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+
+/* this class holds the secret "great-od-one image and text" */
+.secret {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Use flexbox to center content */
+    background-image: url('../images/texture.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: opacity 1s;
+}
+
+/* this calss holds "I have awoken" text */
+.secret-title{
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+    font-weight: bold; /* Use 'bold' instead of '6' */
+    color: #eee;
+    position:inherit;
+    margin-top: 5%;
+    left:5%;
+}
+
+/* this class holds entire piano element */
+.piano {
+    position: relative;
+    display: flex;
+    width: 100%; 
+    height: 100%; 
+    background-color: #444;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+.piano-name{
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+    font-weight: 6;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+/* this class holds all the keys */
+.piano-keys{
+    display: block;
+    width: 90%;
+    height: 50%;
+    position: absolute;
+    bottom:0;
+    margin-left: 5%;
+}
+
+/* base class for key */
+.key {
+    position: relative;
+    border: 4px solid black;
+    border-radius: .5rem;
+    transition: all .07s ease;
+    display: block;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+/* this class represents each letter associated with a key */
+.key-reveal {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 130%;
+}
+
+/* white key */
+.key.white {
+    color: #000; 
+    float: left;
+    width: 10%;
+    height: 100%;
+    background: rgba(255, 255, 255, .99);    
+}
+
+/* black key */
+.key.black {
+    position: absolute;
+    width: 6%;
+    height: 60%;
+    background: #000;
+    color: #eee;
+    top: 0;
+    z-index: 4;
+}
+
+/* this following code styles and places black keys wrt and on-top of white keys position */
+.key[key-code="87"] {
+    left: 7%;
+}
+
+.key[key-code="69"] {
+    left: 17%;
+}
+
+.key[key-code="84"]  {
+    left: 37%;
+}
+
+.key[key-code="89"] {
+    left: 47%;
+}
+
+.key[key-code="85"] {
+    left: 57%;    
+}
+
+.key[key-code="79"] {
+    left: 77%;    
+}
+
+.key[key-code="80"] {
+    left: 87%;    
+}
+
+@media screen and (max-width: 650px) {
+    .great-old-one {
+        flex-direction: column;
+        max-height: unset;
+        width: 80vw;
+    }
+
+    .secret-title {
+        text-align: center;
+    }
+}
