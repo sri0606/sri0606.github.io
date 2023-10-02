@@ -90,10 +90,14 @@
 
 .menu-button {
     background-color: #444;
-    color: white;
-    padding: 5vw;
+    padding: 1vw;
+    width:8vw;
+    height: 6vh;
     border: none;
     cursor: pointer;
+    background-image: url("../images/menu-bar.png");
+    background-repeat: no-repeat;
+    background-size:contain;
   }
   
   /* Dropdown button on hover & focus */

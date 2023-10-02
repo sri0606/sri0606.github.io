@@ -10,6 +10,20 @@ function OnClick() {
   }
 }
 
+
+window.onclick = function(event) {
+  if (!event.target.matches('.menu-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
 //if screen is resized to width greater than 650px
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("resize", function() {
