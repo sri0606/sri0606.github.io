@@ -1,0 +1,174 @@
+:root {
+    --primary-color: rgb(245, 217, 204);
+    --primary-width: 6vw;
+    --primar-height:6vh;
+    --primary-hand-leg-width:1vw;
+    --primary-eye-width:1.5vw;
+    --primary-hand-margin-top:-4.5vh;
+    --primary-left-hand-margin-left: -1vw;
+    --primary-right-hand-margin-left:6vw;
+    --primary-left-leg-margin-left: 1vw;
+    --primary-right-leg-margin-left:4vw;
+}
+
+.hello-guy{
+    width:50%;
+    height:100%;
+}
+.head {
+    width: var(--primary-width);
+    height: var( --primar-height);
+    display: block;
+    position: relative;
+    background: var(--primary-color);
+    border-radius: 50% / 50%;
+    overflow: hidden;
+    z-index:1;
+    transform-origin: bottom center;
+    animation: head-wave 8s ease-in-out infinite alternate;
+  }
+.mouth {
+    position: relative;
+    display: block;
+    width:50%;
+    height:12%;
+    border-radius: 50%;
+    background-color:rgb(17, 16, 17) ;
+    z-index: 2;
+    top:65%;
+    margin-left: 25%;
+}
+.tongue {
+    position: relative;
+    display: block;
+    width: 95%;
+    height: 75%;
+    background: rgb(226, 78, 78);
+    border-radius: 50%;
+    z-index:3;
+    top:30%;
+    margin-left: 5%;
+}
+
+.eye-line{
+    display: block;
+    position: absolute;
+    width:80%;
+    height:50%;
+    overflow: hidden;
+    margin-left:11%;
+}
+.eyeball {
+    position: relative;
+    display: block;
+    width: 60%;
+    height: 45%;
+    background: rgb(9, 66, 3);
+    border-radius: 50%;
+    z-index:3;
+    top:30%;
+    margin-left: 15%;
+}
+
+.eye {
+    position: relative;
+    display: block;
+    width: var(--primary-eye-width);
+    height: 50%;
+    background: rgb(248, 244, 244);
+    border-radius: 50%;
+    z-index:2;
+  }
+
+.eye#left {
+    top:50%;
+    margin-left: 15%;
+
+}
+.eye#right {
+    margin-left: 50%;
+}
+
+.body-wrapper {
+    width: var(--primary-width);
+    height: var( --primar-height);
+    display: block;
+    position: relative;
+    background: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+     overflow: hidden;
+     border-radius: 20%;
+}
+
+.hand-wrapper,.leg-wrapper {
+    position: relative;
+}
+.hands,.legs{
+    width: var(--primary-hand-leg-width);
+    height: var(--primar-height);
+    display: inline;
+    position: absolute;
+    background: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10%;
+    z-index:4;
+}
+
+.hands#right {
+    border-radius: 35%;
+    margin-top:var(--primary-hand-margin-top);
+    margin-left: var(--primary-right-hand-margin-left);
+    transform-origin: top;
+    animation: right-hand-wave 3s ease-in-out infinite alternate;
+  }
+
+.hands#left {
+    border-radius: 35%;
+    margin-top:var(--primary-hand-margin-top);
+    margin-left: var(--primary-left-hand-margin-left);
+    transform-origin: top;
+    animation: left-hand-wave 0.5s ease-in-out infinite alternate;
+  }
+
+.legs#right {
+    margin-left: var(--primary-right-leg-margin-left);
+  }
+
+.legs#left {
+    margin-left: var(--primary-left-leg-margin-left);
+  }
+
+  @keyframes head-wave {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+@keyframes left-hand-wave {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(60deg); /* Wave position */
+    }
+    55% {
+        transform: rotate(90deg); /* Hold position for a bit */
+    }
+    70% {
+        transform: rotate(120deg); /* Hold position for a bit */
+    }
+}
+
+@keyframes right-hand-wave {
+    0% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(-4deg);
+    }
+}

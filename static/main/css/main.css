@@ -11,6 +11,21 @@
     background-color: rgb(144, 172, 162);
 }
 
+.hello-row{
+    background-color: rgb(147, 177, 167);
+    /* min-height: 10vh; */
+    display: flex;
+    flex-direction: row;
+    height: 16vh;
+    max-width: 90vw;
+}
+.hello-left-col{
+    margin-right: 30%;
+}
+.hello-right-col{
+    flex: 1;
+    max-height: 20vh;
+}
 .content-row {
     display: flex;
     flex-direction: row;
@@ -19,7 +34,7 @@
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
-    background-color: rgb(147, 177, 167)
+    background-color: rgb(147, 177, 167);
 }
 
 /* Element Modifier */
