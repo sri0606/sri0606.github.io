@@ -8,6 +8,13 @@
     text-align: center;
 }
 
+
+p{
+    font-size: calc(12px + 0.6vw)  ;
+}
+h1,.h1{
+    font-size:calc(24px+1.2vw) ;
+}
 .content-row {
     display: flex;
     flex-direction: row;

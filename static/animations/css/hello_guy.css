@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(245, 217, 204);
+    --primary-color: rgb(243, 146, 81);
     --primary-width: 6vw;
     --primar-height:6vh;
     --primary-hand-leg-width:1vw;
@@ -37,6 +37,8 @@
     z-index: 2;
     top:65%;
     margin-left: 25%;
+    animation: talk 10s infinite alternate;
+    transform-origin: center;
 }
 .tongue {
     position: relative;
@@ -63,7 +65,7 @@
     display: block;
     width: 60%;
     height: 45%;
-    background: rgb(9, 66, 3);
+    background: rgb(4, 29, 2);
     border-radius: 50%;
     z-index:3;
     top:30%;
@@ -78,6 +80,8 @@
     background: rgb(248, 244, 244);
     border-radius: 50%;
     z-index:2;
+    animation: blink 2s infinite alternate;
+    transform-origin: center;
   }
 
 .eye#left {
@@ -130,7 +134,7 @@
     margin-top:var(--primary-hand-margin-top);
     margin-left: var(--primary-left-hand-margin-left);
     transform-origin: top;
-    animation: left-hand-wave 0.5s ease-in-out infinite alternate;
+    animation: left-hand-wave 4s ease-in-out infinite alternate;
   }
 
 .legs#right {
@@ -141,27 +145,26 @@
     margin-left: var(--primary-left-leg-margin-left);
   }
 
+ 
   @keyframes head-wave {
     0% {
-        transform: rotate(10deg);
+        transform: rotate(6deg);
     }
     100% {
-        transform: rotate(-10deg);
+        transform: rotate(-6deg);
     }
 }
 @keyframes left-hand-wave {
-    0%, 100% {
+    0%, 85% {
         transform: rotate(0deg);
     }
-    30% {
+    40%,50%,60%,70% {
         transform: rotate(60deg); /* Wave position */
     }
-    55% {
-        transform: rotate(90deg); /* Hold position for a bit */
-    }
-    70% {
+    45%,55%,65%,75% {
         transform: rotate(120deg); /* Hold position for a bit */
     }
+
 }
 
 @keyframes right-hand-wave {
@@ -171,4 +174,25 @@
     100% {
         transform: rotate(-4deg);
     }
+}
+@keyframes blink {
+    0% {
+        transform: scaleY(0.9); /* Fully open */
+    }
+    100% {
+        transform: scaleY(0.4); /* Almost closed */
+    }
+}
+@keyframes talk {
+    0%{
+        transform: scaleY(1) scaleX(0.9);
+    }
+      40%, 90%{
+        transform: scaleY(0.7) scaleX(0.6); /* Partially closed */
+    }
+
+    10%,70%{
+        transform: scaleY(0.9) scaleX(1);
+    }
+    
 }
