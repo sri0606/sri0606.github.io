@@ -1,4 +1,7 @@
 /* class holds the poem */
+.navbar {
+    background: linear-gradient(45deg, #389e99,#130e0e);
+}
 .content-poem{
     text-align: center;
     font-style: italic;
