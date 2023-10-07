@@ -1,11 +1,20 @@
 /* Block */
-.body {
-    background-color: rgb(223, 223, 217);
+.main {
+    background: linear-gradient( #545a5a,#a5a6a7);
 }
-
+.navbar {
+    background: linear-gradient(45deg, #389e99,#130e0e);
+}
+.dropdown-content {
+    background: linear-gradient(45deg, #02292c,#130e0e);
+  }
 /* Element */
 .content{
+    margin: 0 auto;
     text-align: center;
+    overflow: hidden;
+    align-items: center;
+    color: rgb(223, 223, 217);
 }
 
 
@@ -23,16 +32,20 @@ h1,.h1{
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
-    background-color: rgb(13, 14, 13);
+    background: linear-gradient(#314134,#124134);
     color: rgb(223, 223, 217);
     margin-bottom: 0.5vh;
+    border-radius: 2vh;
+    /* border-top-left-radius: 2vh; */
 }
+
 
 /* Element Modifier */
 .project-image {
     flex: 1;
     overflow: hidden;
     width: 50%;
+    background-color: #130e0e;
 }
 
 .project-image img {
@@ -69,7 +82,7 @@ h1,.h1{
     }
     .content-row {
         flex-direction: column;
-        max-height: unset;
+        max-height: 100vh;
         max-width: 100%;
         margin: 0 auto;
         margin-bottom: 1vh;
@@ -107,3 +120,24 @@ h1,.h1{
         width:92%;
     }
 }
+
+/* Firefox */
+.project-description {
+    scrollbar-width: thin;
+    scrollbar-color: #3b6c81 #1f1f1f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .project-description::-webkit-scrollbar {
+    width: 1vw;
+  }
+
+  .project-description::-webkit-scrollbar-track {
+    background: inherit;
+  }
+
+  .project-description::-webkit-scrollbar-thumb {
+    background-color: #0b0f0f;
+    border-radius: 2vh;
+    border: 0.2vw ridge #1f596b;
+  }

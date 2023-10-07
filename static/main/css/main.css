@@ -1,7 +1,7 @@
 /* Block */
 .main {
     padding: 3vw;
-    background-color: rgb(251, 251, 252);
+    background: linear-gradient(#8f8e91,#cbcdd3);
     color: aliceblue;
 }
 
@@ -28,12 +28,13 @@ h1,.h1{
 .content-row {
     display: flex;
     flex-direction: row;
-    max-height: 60vh;
-    max-width: 90vw;
+    max-height: 75vh;
+    max-width: 95vw;
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
-    background-color: rgb(13, 14, 13);
+    border-radius: 2vh;
+    background: linear-gradient(rgb(65, 55, 23),#2a3147);
 }
 
 /* Element Modifier */
@@ -54,7 +55,7 @@ h1,.h1{
     padding: 5vh;
     overflow-y: auto;
     text-align: justify;
-    max-height: 50vh;
+    max-height: 60vh;
     width:50%;
 }
 
@@ -108,3 +109,23 @@ h1,.h1{
         width:92%;
     }
 }
+/* Firefox */
+.right-column {
+    scrollbar-width: thin;
+    scrollbar-color: #3b6c81 #1f1f1f;
+  }
+
+  /* Chrome, Edge, and Safari */
+  .right-column::-webkit-scrollbar {
+    width: 0.8vw;
+  }
+
+  .right-column::-webkit-scrollbar-track {
+    background: inherit;
+  }
+
+  .right-column::-webkit-scrollbar-thumb {
+    background-color: #0b0f0f;
+    border-radius: 2vh;
+    border: 0.2vw ridge #6b4d1f;
+  }
