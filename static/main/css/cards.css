@@ -57,7 +57,7 @@
 }
 .card_title {
   font-size: 200%;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 5%; /*Add padding to position the title below the image */
   text-align: center;
   font-family: "Cinzel", serif;
@@ -153,6 +153,14 @@
   
   /* Media Query Modifier */
 @media screen and (max-width: 650px) {
+  .recent_activity h1{
+    padding-top: 3%;
+    text-align: center;
+    font-size: 4vw;
+  }
+  .recent_activity h2{
+    font-size: 3vw;
+  }
 
   .card_container {
     display: flex;
@@ -195,12 +203,11 @@
     transition: width 500ms, opacity 500ms;
 }
 
-  
 }
 @media screen and (max-width: 885px) {
   .card_title {
-      bottom: -20%; /* Adjust the bottom position for smaller screens */
-      font-size: 200%;
+      bottom: -10%; /* Adjust the bottom position for smaller screens */
+      font-size: 4vw;
       left:15%;
   }
 }
