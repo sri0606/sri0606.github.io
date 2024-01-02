@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content = "Wordle project page">
+        <meta name="author" content = "Sriram Seelamneni">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wordle project</title>
+        <link rel="stylesheet" type="text/css" href="../static/main/css/header.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../static/main/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../static/wordle/css/wordle.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../static/favicon/site.webmanifest">
+    </head>
+    <body class="body">
+        <header class="header">
+            
+        </header>
+
+        <nav class="navbar">
+            <div class="navbar-left">
+                <span class="assignment-name"> </span>
+            </div>
+            <div class="navbar-right">
+                <a href="../index.html" class="navbar-link">Home</a>
+                <a href="../projects.html" class="navbar-link">Projects</a>
+                <a href="../static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
+
+                <!-- LinkedIn link as an image -->
+                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link" target="_blank">
+                    <img src="../static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
+                </a>
+                
+                <!-- dropdown menu for mobile interactivity -->
+                <div class="dropdown">
+                    <button onclick="OnClick()" class="menu-button" id = "menu-button">
+                        
+                    </button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html" class="dropdown-nav-link">Home</a>
+                        <a href="projects.html" class="dropdown-nav-link">Projects</a>
+                        <a href="../static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
+                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link" target="_blank">LinkedIn</a></li>
+                        <a href="https://github.com/sri0606" class="dropdown-nav-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+        <main class="main">
+            <p style="text-align:center">Check out fully functional code (dynamic) of this<a href="https://github.com/sri0606/Wordle/tree/main"> Wordle game here .</a></p>
+            <div class="howto-signup-buttons">
+                <button class="how-to-play" onClick="howToPlayClick()">How to Play</button>
+              </div>
+
+    <div class="wordle-game" id="wordleGame">
+    </div>
+
+    <!-- Daily Leader Board -->
+    <div class="leaderboard" id="leaderboard">
+        <p class="game-status" id="gameStatus"></p>
+        <h2 class="word-of-day" id="wordOfDay"></h2>
+        
+            <div id="leaderboardBody">
+                <!-- Table body content dynamically updatd -->
+            </div>
+    </div>
+    
+    <!-- Keyboard -->
+  <div class="keyboard-container" id="keyboardContainer">
+    <div class="kb-row">
+        <div class="kb-button">Q</div>
+        <div class="kb-button">W</div>
+        <div class="kb-button">E</div>
+        <div class="kb-button">R</div>
+        <div class="kb-button">T</div>
+        <div class="kb-button">Y</div>
+        <div class="kb-button">U</div>
+        <div class="kb-button">I</div>
+        <div class="kb-button">O</div>
+        <div class="kb-button">P</div>
+    </div>
+    <div class="kb-row">
+        <div class="kb-button">A</div>
+        <div class="kb-button">S</div>
+        <div class="kb-button">D</div>
+        <div class="kb-button">F</div>
+        <div class="kb-button">G</div>
+        <div class="kb-button">H</div>
+        <div class="kb-button">J</div>
+        <div class="kb-button">K</div>
+        <div class="kb-button">L</div>
+    </div>
+    <div class="kb-row">
+        <div class="kb-button">Z</div>
+        <div class="kb-button">X</div>
+        <div class="kb-button">C</div>
+        <div class="kb-button">V</div>
+        <div class="kb-button">B</div>
+        <div class="kb-button">N</div>
+        <div class="kb-button">M</div>
+    </div>
+    <div class="kb-row">
+        <div class="kb-special-button kb-button">Delete</div>
+        <div class="kb-special-button kb-button">Enter</div>
+    </div>
+  </div>
+  <div id="instructionsPopup" class="instructions-popup">
+    <div class="instructions-popup-content">
+        <h2>Instructions</h2>
+        <hr>
+        <p>Unlike other Wordle games, this creative version features a variable number of letters in the word each day.</p>
+        <p>You have as many guesses as the number of letters in the "Word of the Day". For example, if today's word is "Javascript", you get 10 guesses to crack the Wordle!</p>
+        <p>Make sure the spelling is correct and Hit Enter to submit your guess.</p>
+
+        <p>You must be logged in to play.</p>
+    
+        <h3>Color Hints</h3>
+        <p>Color hints will be revealed after each guess. You can use following cell color hints to solve the wordle:</p>
+        <ul>
+            <li><strong>Grey:</strong> The character does not appear anywhere in the hidden word.</li>
+            <li><strong>Yellow:</strong> The guessed character is correct but in the wrong position.</li>
+            <li><strong>Green:</strong> The guessed character is correct and in the correct position.</li>
+        </ul>
+    
+        <hr>
+        <p>A new Wordle will be available each day! Enjoy :)</p>
+    
+        <button class="close-popup" onclick="closeInstructionsPopup()">Close</button>
+    </div>
+    
+  </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; Sriram Seelamneni</p>
+        </footer>
+
+        <script src="../static/main/js/navbar.js"></script>
+        <script src="../static/wordle/js/wordle.js"></script>
+    </body>
+</html>

@@ -17,7 +17,10 @@
     color: rgb(223, 223, 217);
 }
 
-
+a{
+    color:#aecaca;
+    /* text-decoration: none; */
+}
 p{
     font-size: calc(12px + 0.6vw)  ;
 }

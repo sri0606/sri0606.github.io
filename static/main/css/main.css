@@ -4,7 +4,10 @@
     background: linear-gradient(#8f8e91,#cbcdd3);
     color: aliceblue;
 }
-
+a{
+    color:#aecaca;
+    text-decoration: none;
+}
 p{
     font-size: calc(12px + 0.6vw)  ;
 }
