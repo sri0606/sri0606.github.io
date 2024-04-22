@@ -1,12 +1,12 @@
 /* Settings/Variables */
 :root {
-    --footer-bg-color: #333;
+    --footer-bg-color: #24262b;
     --footer-text-color: #fff;
 }
 
 .footer {
-    background-color: var(--footer-bg-color);
-    color: var(--footer-text-color);
+    /* background-color: var(--footer-bg-color); */
+    /* color: var(--footer-text-color); */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -14,5 +14,7 @@
     width: 100%;
     height: 12vh;
     bottom: 0;
+    color:white;
+    margin-top: 5vh;
 }
 

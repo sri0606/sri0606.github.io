@@ -1,6 +1,11 @@
 /* Block */
 .main {
-    background: linear-gradient( #545a5a,#a5a6a7);
+    /* background: linear-gradient( #545a5a,#a5a6a7); */
+    color:white; 
+}
+.body{
+    background-image:url("../images/projectmainbg.jpg") ;
+    
 }
 .navbar {
     background: linear-gradient(45deg, #389e99,#130e0e);
@@ -30,14 +35,14 @@ h1,.h1{
 .content-row {
     display: flex;
     flex-direction: row;
-    max-height: 60vh;
+    max-height: 75vh;
     max-width: 90vw;
     margin: 0 auto;
     overflow: hidden;
     align-items: center;
     background: linear-gradient(#314134,#124134);
     color: rgb(223, 223, 217);
-    margin-bottom: 0.5vh;
+    margin-bottom: 2.5vh;
     border-radius: 2vh;
     /* border-top-left-radius: 2vh; */
 }
@@ -69,7 +74,7 @@ h1,.h1{
     padding: 5vh;
     overflow-y: auto;
     text-align: justify;
-    max-height: 50vh;
+    max-height: 90%;
     width:50%;
 }
 
@@ -88,7 +93,7 @@ h1,.h1{
         max-height: 100vh;
         max-width: 100%;
         margin: 0 auto;
-        margin-bottom: 1vh;
+        margin-bottom: 3vh;
     }
 
     .project-description {

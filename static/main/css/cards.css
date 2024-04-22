@@ -1,10 +1,12 @@
 
   .recent_activity {
-    margin-top: 5vh;
+    /* margin-top: 5vh; */
     /* background-color: black; */
     background: linear-gradient(rgb(65, 55, 23),#060811);
     height: 80vh; 
     border-radius: 2vh;
+    margin-left:2vh;
+    margin-right:2vh;
   }
   .recent_activity h1{
     padding-top: 3%;
@@ -154,7 +156,7 @@
   /* Media Query Modifier */
 @media screen and (max-width: 650px) {
   .recent_activity {
-    margin-top: 5vh;
+    margin-top: 3vh;
     /* background-color: black; */
     background: linear-gradient(rgb(65, 55, 23),#060811);
     height: 50vh; 

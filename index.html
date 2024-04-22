@@ -14,59 +14,225 @@
         <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
         <link rel="manifest" href="static/favicon/site.webmanifest">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <!-- stylesheets -->
         <link rel="stylesheet" type="text/css" href="static/main/css/header.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/navbar.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/main.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/footer.css">
         <link rel="stylesheet" type="text/css" href="static/main/css/cards.css">
-
         <!-- animations -->
         <link rel="stylesheet" href="static/animations/css/hello_guy.css">
     </head>
     <body class="body">
-        <header class="header">
+        <!-- <header class="header">
             
-        </header>
+        </header> -->
 
-        <nav class="navbar">
-            <div class="navbar-left">
-                <span class="assignment-name"></span>
+
+        <main class="main">
+            <!-- this row contains my image and a brief description about myself -->
+            <div class="content-row-home">
+                <div class="left-column-home">
+                    <img src="static/main/images/ppic.jpg" alt="Sriram" loading="lazy">
+                </div>
+                <div class="right-column-home">
+                    <h1 class="my-name"> Hello! I'm Sriram Seelamneni...</h1>
+                    <div class="about-me-list">
+                        <div class="about-me-element">
+                            <i class="fas fa-bullseye" style="color:rgb(121, 6, 136)"></i>
+                            <p>Driven by purpose, fueled by curiosity, shaping tomorrow.</p>
+                        </div>
+                        <div class="about-me-element">
+                            <i class="far fa-envelope" style="color:rgb(136, 84, 6)"></i>
+                            <p>srirams0606@gmail.com</p>
+                        </div>
+                        <div class="about-me-element">
+                            <i class="fas fa-map-pin" style="color: rgb(158, 6, 6);"></i>
+                            <p>East Lansing, Michigan</p>
+                        </div>
+                        <div class="about-me-element">
+                            <i class="fas fa-university" style="color: rgb(20, 114, 1);"></i>
+                            <p>B.Sc Computer Science, Michigan State University</p>
+                            <p class="about-me-element-date">2024</p>
+                        </div>
+                        <div class="about-me-element">
+                            <i class="fas fa-home" style="color: rgb(6, 158, 145);"></i>
+                            <p>Born 2003. Vijayawada, India</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons-home">
+                        <a href="projects.html" class="nav-button-home">Projects</a>
+                        <a href="static/main/docs/resume.pdf"           target="_blank" class="nav-button-home">Resume <i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://www.linkedin.com/in/sri0606/"  target="_blank" class="nav-button-home"><i class="fab fa-linkedin"style="color:rgb(100, 188, 214)"> LinkedIn</i></a>
+                        <a href="https://github.com/sri0606"            target="_blank" class="nav-button-home"><i class="fab fa-github" style="color:rgb(167, 78, 155)"> GitHub</i></a>
+                        <a href="#about-me" class="nav-button-home">About me</a>
+                    </div>
+                </div>
             </div>
-            <div class="navbar-right">
-                <a href="home.html" class="navbar-link">Home</a>
-                <a href="projects.html" class="navbar-link">Projects</a>
-                <a href="../static/main/docs/resume.pdf" class="navbar-link" target="_blank">Resume</a>
+            <div style="padding: 4vh;">
+                <div class="recent_activity">
+                    <h1>What I have been upto  recently!</h1>
+                    <div class="card_container" onscroll="getScrollVal()">
+                        <div class="card" id="eva">
+                            <a href="projects.html#eva" class="card-link">
+                                <img src="static/main/images/eva.jpeg" alt="eva" class="row_card" />
+                                <h2 class="card_title">EVA</h2>
+                                <div class="card_description">
+                                    <h2>Enhanced Video Assistant</h2>
+                                    <p>Worked on developing a video assistant web app, EVA, as a part of capstone project which offers hybrid approach to video 
+                                        editing.</p>
+                                    <p>Integrated open-source machine learning models into workflow to enhance features: improve audio, give multi-layered
+                                        feedback and condenses video to key moments.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card" id="facebook-clone">
+                            <a href="projects.html#facebook-clone" class="card-link">
+                                <img src="https://api.dogeniuson.com/img/Overview.webp" alt="Wordle" class="row_card" />
+                                <h2 class="card_title">Facebook clone</h2>
+                                <div class="card_description">
+                                    <h2>Facebook Clone</h2>
+                                    <p>For learning purposes, I've been working on developing a facebook clone using React-native framework along with expo.</p>
+                                    <p>Everything's going well so far and I enjoy working with React-native, not so complex learning curve yet it's very powerful.</p>
+                                </div>
+                            </a>
+                        </div>
 
-                <!-- LinkedIn link as an image -->
-                <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-link" class="navbar-link">
-                    <img src="static/main/images/social-linkedin.png" class="linkedin-image" alt="LinkedIn" loading="lazy">
-                </a>
+                        <div class="card" id="wordle">
+                            <a href="projects.html#wordle" class="card-link">
+                                <img src="https://assetsio.reedpopcdn.com/wordle-past-answers-header.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Wordle" class="row_card" />
+                                <h2 class="card_title">Wordle</h2>
+                                <div class="card_description">
+                                    <h2>Wordle</h2>
+                                    <p>Developed an innovative variation of the classic Wordle game, featuring a dynamic and user-engaging interface including a daily leaderboard.</p>
+                                    <p>You can also play a static version of this. Check out the link on projects page.</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class="card" id="wildlens">
+                            <a href="projects.html#wildlens" class="card-link">
+                                <img src="static/main/images/wildlens.jpeg" alt="WildLens" class="row_card" />
+                                <h2 class="card_title">WildLens</h2>
+                                <div class="card_description">
+                                    <h2>WildLens</h2>
+                                    <p>WildLens is a machine learning model for fauna recognition, for a non-invasive approach to continuous wildlife census. </p>
+                                    <p>Read <a href="static/main/docs/WildLens Paper.pdf" target="_blank">our paper here</a>.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card">
+                            <a href="https://github.com/sri0606/FaceSpyder/" class="card-link">
+                                <img src="static/main/images/facespyder.ico" alt="Face recognition" class="row_card" />
+                                <h2 class="card_title">FaceSpyder</h2>
+                                <div class="card_description">
+                                    <h2>FaceSpyder</h2>
+                                    <p>I am developing an application primarily in C++ that uses Qt framework & OpenCV libraries to implement features such as face & object detection across various media elements, including images, videos, & documents. This application encompasses capabilities like face/object matching.</p>
+                                    <p>You can download the application using the link specified on projects page.</p>
+                                </div>
+                            </a>
+                        </div>
+                    
+                        <div class="card" id="chipwar">
+                            <a href="#chipwar" class="card-link">
+                                <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982172008/chip-war-9781982172008_hr.jpg" alt="Chip War book" class="row_card" />
+                                
+                                <div class="card_description">
+                                    <h2>Chip War: The Fight for the World's Most Critical Technology</h2>
+                                    <p>Chip War, a book written by Chris Miller, explores the rise of the semiconductor industry, focusing on how it became one of most crucial resoruce. I'm enjoying it so far.</p>
+                                </div>
+                                <h2 class="card_title">Chip War</h2>
+                            </a>
+                        </div>          
+                        <div class="card">
+                            <a href="projects.html#pyorcid" class="card-link">
+                                <img src="static/main/images/pyorcid.png" alt="PyOrcid" class="row_card" />
+                                <h2 class="card_title">PyOrcid</h2>
+                                <div class="card_description">
+                                    <h2>PyOrcid</h2>
+                                    <p>PyOrcid is a python package and API wrapper for Orcid. Enables researchers/users to integrate ORCID functionality into their software, allowing users to collect, track, and sync their publication materials, research activities, and other related information</p>
+                                </div>
+                            </a>
+                        </div>          
+                            
+                        <div class="card" id="website">
+                            <a href="#website" class="card-link">
+                                <img src="https://assets-global.website-files.com/606a802fcaa89bc357508cad/61701b4e166c837543d8f0ce_2_How%20To%20a%20Create%20Personal%20Portfolio%20Website.png" alt="CWC23" class="row_card" />
+                                <h2 class="card_title">Portfolio website</h2>
+                                <div class="card_description">
+                                    <h2>Portfolio website</h2>
+                                    <p>Building and enhancing this website's design has been a lot of fun, especially in pure HTML, JS, and CSS, without relying on any frameworks or third-party resources as I had been doing previously. It has helped me refine my front-end web development skills and provided me with a lot of flexibility to create it just the way I want.</p>
+                                </div>
+                            </a>
+                        </div> 
+                        
+                        <div class="card" id=" jackryan">
+                            <a href="#jackryan" class="card-link">
+                                <img src="https://homebase.org/wp-content/uploads/2023/06/Jack-Ryan-1.jpg" alt="movieImage" class="row_card" />
+                                <h2 class="card_title">Jack Ryan</h2>
+                                <div class="card_description">
+                                    <h2>Tom Clancy's Jack Ryan</h2>
+                                    <p>"An action-thriller that centers on Ryan as an up-and-coming CIA analyst. He is thrust into a dangerous field assignment for the first time and uncovers a pattern in terrorist communication." Tbh, final season is not as good as I've expected.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="space"></div>
+                        <div class="left_arrow scroll_button" onclick="scrollL()">
+                        <i class="arrow left"></i>
+                        </div>
+                        <div class="right_arrow scroll_button" onclick="scrollR()">
+                        <i class="arrow right"></i>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
                 
-                <!-- dropdown menu for mobile interactivity -->
-                <div class="dropdown">
-                    <button onclick="OnClick()" class="menu-button" id = "menu-button">
-                    </button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="index.html" class="dropdown-nav-link">Home</a>
-                        <a href="projects.html" class="dropdown-nav-link">Projects</a>
-                        <a href="static/main/docs/resume.pdf" class="dropdown-nav-link" target="_blank">Resume</a>
-                        <a href="https://www.linkedin.com/in/sriram-seelamneni-5a4253264/" id="linkedin-text-mobile" class="dropdown-nav-link">LinkedIn</a></li>
-                        <a href="https://github.com/sri0606" class="dropdown-nav-link">GitHub</a>
+                <div class="achievements-container">
+                    <div class="achievements">
+                        <div class="achievement-header">
+                            <h1>Achievements and Awards</h1>
+                        </div>
+                        <h2 class="achievement-title"><a href="http://www.capstone.cse.msu.edu/2024-01/design-day/awards/#auto-owners-exposition-award" target="_blank">Auto-Owners Exposition Award</a></h1>
+                        <p>For my senior capstone project at Michigan State University, I collaborated with my team to develop EVA (Enhanced Video Assistant), a sophisticated video editing software designed to streamline the editing process and enhance user experience.
+                            EVA garnered significant recognition, particularly during Design Day, where we showcased its capabilities. Our dedication and innovation were acknowledged with an award sponsored by Auto-Owners Insurance of Lansing, Michigan.
+                            This award, which is sponsored by Auto-Owners Insurance of Lansing, Michigan, is awarded to the team that has best overall Design Day performance.
+                        </p>
+                        <div class="acheievement-media">
+                            <div class="achievement-image"><img src="static\main\images\designday1.jpg" alt="SpartaHack"></div>
+                            <div class="achievement-image"><img src="static\main\images\designday2.jpg" alt="SpartaHack"></div>
+                        </div>
+                    </div>
+
+                    <div class="achievements">
+                        <h2 class="achievement-title"><a href="https://devpost.com/software/brainwaive" target="_blank">Best Emerging Technology Award</a></h1>
+                        <p>In my first hackathon experience at SpartaHack, our team won the Best Emerging Technology Award for our project, BrainWaive. BrainWaive is a cross-platform application leveraging AI to craft personalized study guides for students through the generation of flashcards and quizzes.
+
+                            We developed BrainWaive as a robust personalized education web application, harnessing the capabilities of OpenAI’s GPT-3 model. It offered impactful learning experiences, featuring custom quizzes, flashcards, and career resources tailored to the educational needs of students.</p>
+                            <div class="acheievement-media">
+                                <div class="achievement-image"><img src="static\main\images\spartahack1.jpg" alt="SpartaHack"></div>
+                                <div class="achievement-image"><img src="static\main\images\spartahack2.jpg" alt="SpartaHack"></div>
+                                <div class="achievement-image"><img src="static\main\images\spartahack3.jpg" alt="SpartaHack"></div>
+                            </div>
+                    </div>
+
+                    <div class="achievements">
+                        <h2 class="achievement-title"><a href="http://www.msu.edu" target="_blank">$75,000 Scholarship</a></h2>
+                        <p>Michigan State University awarded me a scholarship totaling $75,000 over the course of my undergraduate studies in Computer Science and Computational Mathematics, Science, and Engineering. This scholarship, amounting to $10,500 per semester, has played a pivotal role in supporting my academic journey. It has allowed me to concentrate on my studies and research projects, facilitating my growth and development as a scholar.</p>
+                        <p>Additionally, I was recognized on the Dean's List six times, demonstrating consistent and exceptional academic performance throughout my tenure at the university.</p>
+                        <div class="acheievement-media">
+                            <div class="achievement-image"><img src="static\main\images\msulogo.jpg" alt="Michigan State University"></div>
+                            <div class="achievement-image"><img src="static\main\images\msu.jpg" alt="Michigan State University"></div>
+                        </div>
                     </div>
                 </div>
 
-            </div>
-        </nav>
-        <main class="main">
-            <!-- this row contains my image and a brief description about myself -->
-            <div class="content-row">
-                <div class="left-column">
-                    <img src="static/main/images/ppic.jpg" alt="Sriram" loading="lazy">
-                </div>
-                <div class="right-column">
-                    <h1>Hello there!</h1>
+                <div class="about-me-container" id="about-me">
+                    <h1>About Me</h1>
+                    <h2>Hello there!</h2>
                     <div class="hello-guy-container">
                         <div class="hello-guy" id = "hello-guy-animation">
                             <div class="head">
@@ -112,134 +278,14 @@
             
                         </div>
                     </div>
+                    
                     <p>I'm <strong class="h1" style="color:#8f8383;">Sriram Seelamneni</strong>, currently a senior at <strong> Michigan State University</strong>. My academic focus is split between Computer Science and Computational Mathematics, Science, and Engineering (CMSE). Originally from Vijayawada, India, I have come to the USA at the age of 17, to pursue education.</p>
                     <p>I'm a dedicated learner with a genuine curiosity about how things function, which naturally led me to the realms of tech and science. In my downtime, you'll often find me engrossed in sports, especially Cricket, or working on fun projects. I also enjoy kicking back with movies and TV shows for some relaxation.</p>
                     <p>In my future career aspirations, I see myself as a developer and researcher, not just for the sake of it, but with a clear purpose. I'm driven by a deep desire to work on projects that ignite my curiosity, keep me engaged, and continually challenge me.</p>
                     <p>My ultimate goal is to create products that can genuinely make a positive and progressive impact on people's lives. It's not just about writing code; it's about crafting solutions that matter. For me, the thrill of discovery and the opportunity to make a difference are the driving forces behind my future endeavors as a developer and researcher.</p>
                     <p>I cherish that sense of boundless curiosity I had when I first started on this journey, and I'm determined not to lose it. To keep at it, I'm committed to immersing myself in projects and areas of study that allow me to learn and grow continuously.</p>
-                </div>
-            </div>
-            <div class="recent_activity">
-                <h1>What I have been upto  recently!</h1>
-                <div class="card_container" onscroll="getScrollVal()">
-                    <div class="card" id="eva">
-                        <a href="projects.html#eva" class="card-link">
-                            <img src="static/main/images/eva.jpeg" alt="eva" class="row_card" />
-                            <h2 class="card_title">EVA</h2>
-                            <div class="card_description">
-                                <h2>Enhanced Video Assistant</h2>
-                                <p>Worked on developing a video assistant web app, EVA, as a part of capstone project which offers hybrid approach to video 
-                                    editing.</p>
-                                <p>Integrated open-source machine learning models into workflow to enhance features: improve audio, give multi-layered
-                                    feedback and condenses video to key moments.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card" id="facebook-clone">
-                        <a href="projects.html#facebook-clone" class="card-link">
-                            <img src="https://api.dogeniuson.com/img/Overview.webp" alt="Wordle" class="row_card" />
-                            <h2 class="card_title">Facebook clone</h2>
-                            <div class="card_description">
-                                <h2>Facebook Clone</h2>
-                                <p>For learning purposes, I've been working on developing a facebook clone using React-native framework along with expo.</p>
-                                <p>Everything's going well so far and I enjoy working with React-native, not so complex learning curve yet it's very powerful.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card" id="wordle">
-                        <a href="projects.html#wordle" class="card-link">
-                            <img src="https://assetsio.reedpopcdn.com/wordle-past-answers-header.jpg?width=1200&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp" alt="Wordle" class="row_card" />
-                            <h2 class="card_title">Wordle</h2>
-                            <div class="card_description">
-                                <h2>Wordle</h2>
-                                <p>Developed an innovative variation of the classic Wordle game, featuring a dynamic and user-engaging interface including a daily leaderboard.</p>
-                                <p>You can also play a static version of this. Check out the link on projects page.</p>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="card" id="wildlens">
-                        <a href="projects.html#wildlens" class="card-link">
-                            <img src="static/main/images/wildlens.jpeg" alt="WildLens" class="row_card" />
-                            <h2 class="card_title">WildLens</h2>
-                            <div class="card_description">
-                                <h2>WildLens</h2>
-                                <p>WildLens is a machine learning model for fauna recognition, for a non-invasive approach to continuous wildlife census. </p>
-                                <p>Read <a href="static/main/docs/WildLens Paper.pdf" target="_blank">our paper here</a>.</p>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="https://github.com/sri0606/FaceSpyder/" class="card-link">
-                            <img src="static/main/images/facespyder.ico" alt="Face recognition" class="row_card" />
-                            <h2 class="card_title">FaceSpyder</h2>
-                            <div class="card_description">
-                                <h2>FaceSpyder</h2>
-                                <p>I am developing an application primarily in C++ that uses Qt framework & OpenCV libraries to implement features such as face & object detection across various media elements, including images, videos, & documents. This application encompasses capabilities like face/object matching.</p>
-                                <p>You can download the application using the link specified on projects page.</p>
-                            </div>
-                        </a>
-                    </div>
-                   
-                    <div class="card" id="chipwar">
-                        <a href="#chipwar" class="card-link">
-                            <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982172008/chip-war-9781982172008_hr.jpg" alt="Chip War book" class="row_card" />
-                            
-                            <div class="card_description">
-                                <h2>Chip War: The Fight for the World's Most Critical Technology</h2>
-                                <p>Chip War, a book written by Chris Miller, explores the rise of the semiconductor industry, focusing on how it became one of most crucial resoruce. I'm enjoying it so far.</p>
-                            </div>
-                            <h2 class="card_title">Chip War</h2>
-                        </a>
-                    </div>          
-                    <div class="card">
-                        <a href="projects.html#pyorcid" class="card-link">
-                            <img src="static/main/images/pyorcid.png" alt="PyOrcid" class="row_card" />
-                            <h2 class="card_title">PyOrcid</h2>
-                            <div class="card_description">
-                                <h2>PyOrcid</h2>
-                                <p>PyOrcid is a python package and API wrapper for Orcid. Enables researchers/users to integrate ORCID functionality into their software, allowing users to collect, track, and sync their publication materials, research activities, and other related information</p>
-                            </div>
-                        </a>
-                    </div>          
-                          
-                    <div class="card" id="website">
-                        <a href="#website" class="card-link">
-                            <img src="https://assets-global.website-files.com/606a802fcaa89bc357508cad/61701b4e166c837543d8f0ce_2_How%20To%20a%20Create%20Personal%20Portfolio%20Website.png" alt="CWC23" class="row_card" />
-                            <h2 class="card_title">Portfolio website</h2>
-                            <div class="card_description">
-                                <h2>Portfolio website</h2>
-                                <p>Building and enhancing this website's design has been a lot of fun, especially in pure HTML, JS, and CSS, without relying on any frameworks or third-party resources as I had been doing previously. It has helped me refine my front-end web development skills and provided me with a lot of flexibility to create it just the way I want.</p>
-                            </div>
-                        </a>
-                    </div> 
-                    
-                    <div class="card" id=" jackryan">
-                        <a href="#jackryan" class="card-link">
-                            <img src="https://homebase.org/wp-content/uploads/2023/06/Jack-Ryan-1.jpg" alt="movieImage" class="row_card" />
-                            <h2 class="card_title">Jack Ryan</h2>
-                            <div class="card_description">
-                                <h2>Tom Clancy's Jack Ryan</h2>
-                                <p>"An action-thriller that centers on Ryan as an up-and-coming CIA analyst. He is thrust into a dangerous field assignment for the first time and uncovers a pattern in terrorist communication." Tbh, final season is not as good as I've expected.</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="space"></div>
-                    <div class="left_arrow scroll_button" onclick="scrollL()">
-                    <i class="arrow left"></i>
-                    </div>
-                    <div class="right_arrow scroll_button" onclick="scrollR()">
-                    <i class="arrow right"></i>
-                    </div>
-                    
-                </div>
-                </div>
-            </div>
-            
-            <hr>
-            
+                </div>  
+        </div>  
         </main>
 
         <footer class="footer">
@@ -248,5 +294,6 @@
 
         <script src="static/main/js/navbar.js"></script>
         <script src="static/main/js/cards.js"></script>
+        <script src="static/main/js/homebg.js"></script>
     </body>
 </html>

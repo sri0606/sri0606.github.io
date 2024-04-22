@@ -33,3 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+// Select the element
+const element = document.querySelector('.my-name');
+
+// Create the observer
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // Add the 'active' class to the element when it's in view
+    if (entry.isIntersecting) {
+      entry.target.classList.add('active');
+    } else {
+      entry.target.classList.remove('active');
+    }
+  });
+});
+
+// Observe the element
+observer.observe(element);

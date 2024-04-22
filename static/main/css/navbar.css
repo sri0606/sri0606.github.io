@@ -134,3 +134,29 @@
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+
+  /* HOME PAGE */
+  .nav-buttons-home {
+    display: flex;
+    justify-content: space-between;
+    gap:1%;
+    width:100%;
+    margin-top:2vh;
+}
+
+.nav-button-home {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1b1b1b;
+    padding: 3%;
+    border-radius: 2vh;
+    transition: background-color 0.3s ease;
+    
+}
+
+.nav-button-home:hover {
+    background-color: #70757a;
+    color: #fff;
+}
+
