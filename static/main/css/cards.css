@@ -161,6 +161,8 @@
     background: linear-gradient(rgb(65, 55, 23),#060811);
     height: 50vh; 
     border-radius: 2vh;
+    margin-left:1vh;
+    margin-right:1vh;
   }
   .recent_activity h1{
     padding-top: 5%;

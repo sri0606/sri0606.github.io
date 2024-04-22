@@ -18,6 +18,7 @@
 }
 .cell {
     background-color: black;
+    border: 1px solid rgb(73, 72, 72);
     color: rgb(255, 255, 255);
     margin-left: 0.5vw;
     font-size: 3vw;

@@ -69,6 +69,7 @@ h2.achievement-title a {
     height: 93vh;
     overflow: hidden;
     text-align: justify;
+    align-content:center;
     background-image:url("../images/homebg1.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,6 +200,10 @@ h2.achievement-title a {
       border-right-color: transparent;
     }
   }
+
+.home-content{
+    padding:4vh;
+}
 /* Media Query Modifier */
 @media screen and (max-width: 650px) {
 
@@ -243,6 +248,14 @@ h2.achievement-title a {
         object-fit:scale-down;
         overflow: hidden;
         border-radius: 2vh ;
+    }
+    .home-content{
+        padding:1vh;
+    }
+    .about-me-container{
+        padding: 2vh;
+        margin-left:2vh;
+        margin-right:2vh;
     }
 }
 /* Firefox */

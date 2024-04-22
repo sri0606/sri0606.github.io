@@ -148,11 +148,11 @@
 .nav-button-home {
     text-decoration: none;
     color: #ffffff;
-    background-color: #1b1b1b;
+    background-color: #000000;
     padding: 3%;
     border-radius: 2vh;
     transition: background-color 0.3s ease;
-    
+    border: 1px solid #3b3a3a;
 }
 
 .nav-button-home:hover {
