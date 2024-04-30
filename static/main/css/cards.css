@@ -194,6 +194,7 @@
     display: inline-block;
     position: relative;
     height: 70%;
+    max-width: 60%;
     cursor: pointer;
     bottom: 0%;
     pointer-events: none;
@@ -202,7 +203,7 @@
   .row_card {
     object-fit:contain;
     height: 90%;
-    width: fit-content  ;
+    width:max-content  ;
     pointer-events: none;
   }
   
@@ -223,7 +224,6 @@
       /* opacity: 0.4;  */
       pointer-events: none;
   }
-  
 }
 
 @media screen and (max-width: 885px) {
