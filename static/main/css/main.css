@@ -102,6 +102,7 @@ h2.achievement-title a {
     margin-left:6vh;
     margin-right:6vh;
     border-radius: 2vh;
+    margin-top: 5vh;
 }
 /* Block Modifier */
 .h1 {
@@ -169,6 +170,28 @@ h2.achievement-title a {
     border-radius: 2vh ;
 }
 
+.work-experiences{
+    padding: 2vh;
+    /* background: linear-gradient(rgb(65, 55, 23),#060811); */
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    border-radius: 1.5vh;
+}
+.work-experience{
+    gap: 2%;
+    align-items: center;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+    padding: 2vh;
+    background: linear-gradient(rgb(65, 55, 23),#060811);
+    border-radius: 1.5vh;
+}
+.work-experience-title-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .my-name {
     position: relative;
     color: hsl(0, 6%, 62%);
